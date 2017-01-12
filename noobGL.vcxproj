@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A15394EE-E4DF-4290-A951-DCECD4013E2A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>noobGL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\cpp\ogl\noobGL\noobGL\render;C:\cpp\ogl\noobGL\noobGL;C:\cpp\ogl\noobGL\include\tinyxml;C:\cpp\ogl\noobGL\noobGL\scene;C:\cpp\ogl\noobGL\noobGL\physics;C:\cpp\ogl\noobGL\noobGL\loaders;C:\cpp\ogl\noobGL\include;C:\cpp\ogl\noobGL\rax;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\cpp\ogl\noobGL\include\assimp-3.1.1-win-binaries\include;C:\cpp\ogl\noobGL\noobGL\render;C:\cpp\ogl\noobGL\noobGL;C:\cpp\ogl\noobGL\include\tinyxml;C:\cpp\ogl\noobGL\noobGL\scene;C:\cpp\ogl\noobGL\noobGL\physics;C:\cpp\ogl\noobGL\noobGL\loaders;C:\cpp\ogl\noobGL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\cpp\ogl\noobGL\include\assimp-3.1.1-win-binaries\lib32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\cpp\ogl\noobGL\include\soil\src;C:\cpp\ogl\noobGL\include\tinyxml;C:\cpp\ogl\noobGL\include;C:\cpp\ogl\noobGL\include\glew\include;C:\cpp\ogl\noobGL\include\glm;C:\cpp\ogl\noobGL\include\glew;C:\cpp\ogl\noobGL\include\glfw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\cpp\ogl\noobGL\include\tinyxml\Debugtinyxml;C:\cpp\ogl\noobGL\include\soil\lib;C:\cpp\ogl\noobGL\include\soil\lib;C:\cpp\ogl\noobGL\include\glew;C:\cpp\ogl\noobGL\include\glm;C:\cpp\ogl\noobGL\include\glfw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;SOIL.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\cpp\ogl\noobGL\include\soil\src;C:\cpp\ogl\noobGL\include;C:\cpp\ogl\noobGL\include\glew\include;C:\cpp\ogl\noobGL\include\glm;C:\cpp\ogl\noobGL\include\glew;C:\cpp\ogl\noobGL\include\glfw;C:\cpp\ogl\noobGL\include\glfw\include;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\cpp\ogl\noobGL\include\tinyxml\Debugtinyxml;C:\cpp\ogl\noobGL\include\soil\lib;C:\cpp\ogl\noobGL\include\glew;C:\cpp\ogl\noobGL\include\glm;C:\cpp\ogl\noobGL\include\glfw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;SOIL.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\glew\include\gl\glew.h" />
+    <ClInclude Include="include\glew\include\GL\glxew.h" />
+    <ClInclude Include="include\glew\include\GL\wglew.h" />
+    <ClInclude Include="include\glfw\GLFW\glfw3.h" />
+    <ClInclude Include="include\glfw\GLFW\glfw3native.h" />
+    <ClInclude Include="noobGL\loaders\ContentCGF.h" />
+    <ClInclude Include="noobGL\loaders\nglAionHeightmap.h" />
+    <ClInclude Include="noobGL\loaders\nglCGFDefs.h" />
+    <ClInclude Include="noobGL\nglCallbacks.h" />
+    <ClInclude Include="noobGL\nglEngine.h" />
+    <ClInclude Include="noobGL\physics\nglBoundingVolume.h" />
+    <ClInclude Include="noobGL\nglBufferObject.h" />
+    <ClInclude Include="noobGL\physics\nglRay.h" />
+    <ClInclude Include="noobGL\render\nglRenderableContainer.h" />
+    <ClInclude Include="noobGL\scene\nglCamera.h" />
+    <ClInclude Include="noobGL\nglCommon.h" />
+    <ClInclude Include="noobGL\nglResourceManager.h" />
+    <ClInclude Include="noobGL\render\nglRenderQueue.h" />
+    <ClInclude Include="noobGL\scene\nglGeometry.h" />
+    <ClInclude Include="noobGL\nglJob.h" />
+    <ClInclude Include="noobGL\nglJobEngine.h" />
+    <ClInclude Include="noobGL\loaders\nglLoader.h" />
+    <ClInclude Include="noobGL\loaders\nglLoaderCGF.h" />
+    <ClInclude Include="noobGL\physics\nglOBB.h" />
+    <ClInclude Include="noobGL\render\nglShaderCompiler.h" />
+    <ClInclude Include="noobGL\loaders\nglHeightmap.h" />
+    <ClInclude Include="noobGL\scene\nglRawMesh.h" />
+    <ClInclude Include="noobGL\scene\nglTerrainPatch.h" />
+    <ClInclude Include="rax\raxBits.h" />
+    <ClInclude Include="rax\raxFileBuffer.h" />
+    <ClInclude Include="rax\raxLogging.h" />
+    <ClInclude Include="noobGL\render\nglMaterial.h" />
+    <ClInclude Include="noobGL\nglMaterialDefinitionLoader.h" />
+    <ClInclude Include="noobGL\nglMaterialManager.h" />
+    <ClInclude Include="noobGL\scene\nglMesh.h" />
+    <ClInclude Include="noobGL\nglObject.h" />
+    <ClInclude Include="noobGL\render\nglRenderContext.h" />
+    <ClInclude Include="noobGL\render\nglRenderer.h" />
+    <ClInclude Include="noobGL\scene\nglScene.h" />
+    <ClInclude Include="noobGL\scene\nglSceneNode.h" />
+    <ClInclude Include="noobGL\render\nglShader.h" />
+    <ClInclude Include="noobGL\render\nglShaderAtrribute.h" />
+    <ClInclude Include="noobGL\render\nglShaderGlobals.h" />
+    <ClInclude Include="noobGL\render\nglShaderProgram.h" />
+    <ClInclude Include="noobGL\render\nglShaderUniform.h" />
+    <ClInclude Include="noobGL\render\nglShaderVariable.h" />
+    <ClInclude Include="noobGL\scene\nglTerrain.h" />
+    <ClInclude Include="noobGL\render\nglTexture.h" />
+    <ClInclude Include="noobGL\nglWindow.h" />
+    <ClInclude Include="rax\raxCriticalSection.h" />
+    <ClInclude Include="rax\raxStringUtils.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="noobGL\nglFileUtils.h" />
+    <ClInclude Include="_models\quad_geo_uv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="noobGL.cpp" />
+    <ClCompile Include="noobGL\loaders\ContentCGF.cpp" />
+    <ClCompile Include="noobGL\loaders\nglAionHeightmap.cpp" />
+    <ClCompile Include="noobGL\loaders\nglHeightmap.cpp" />
+    <ClCompile Include="noobGL\nglResourceManager.cpp" />
+    <ClCompile Include="noobGL\physics\nglBoundingVolume.cpp" />
+    <ClCompile Include="noobGL\render\nglRenderableContainer.cpp" />
+    <ClCompile Include="noobGL\scene\nglCamera.cpp" />
+    <ClCompile Include="noobGL\render\nglRenderQueue.cpp" />
+    <ClCompile Include="noobGL\scene\nglGeometry.cpp" />
+    <ClCompile Include="noobGL\loaders\nglLoaderCGF.cpp" />
+    <ClCompile Include="noobGL\render\nglMaterial.cpp" />
+    <ClCompile Include="noobGL\nglMaterialDefinitionLoader.cpp" />
+    <ClCompile Include="noobGL\nglMaterialManager.cpp" />
+    <ClCompile Include="noobGL\scene\nglMesh.cpp" />
+    <ClCompile Include="noobGL\physics\nglOBB.cpp" />
+    <ClCompile Include="noobGL\nglObject.cpp" />
+    <ClCompile Include="noobGL\render\nglRenderContext.cpp" />
+    <ClCompile Include="noobGL\render\nglRenderer.cpp" />
+    <ClCompile Include="noobGL\scene\nglRawMesh.cpp" />
+    <ClCompile Include="noobGL\scene\nglScene.cpp" />
+    <ClCompile Include="noobGL\scene\nglSceneNode.cpp" />
+    <ClCompile Include="noobGL\render\nglShader.cpp" />
+    <ClCompile Include="noobGL\render\nglShaderCompiler.cpp" />
+    <ClCompile Include="noobGL\render\nglShaderProgram.cpp" />
+    <ClCompile Include="noobGL\render\nglShaderUniform.cpp" />
+    <ClCompile Include="noobGL\render\nglShaderVariable.cpp" />
+    <ClCompile Include="noobGL\render\nglTexture.cpp" />
+    <ClCompile Include="noobGL\nglWindow.cpp" />
+    <ClCompile Include="noobGL\scene\nglTerrain.cpp" />
+    <ClCompile Include="noobGL\scene\nglTerrainPatch.cpp" />
+    <ClCompile Include="rax\raxCriticalSection.cpp" />
+    <ClCompile Include="rax\raxFileBuffer.cpp" />
+    <ClCompile Include="rax\raxLogging.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="noobGL\nglFileUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="noobGL\_useful_links.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
