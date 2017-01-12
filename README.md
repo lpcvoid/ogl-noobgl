@@ -18,3 +18,16 @@ I hope you have fun with this. I know the code is pretty crappy at some points.
 
 # Plans
 Probably none. If I get back into OpenGL, I will probably write a new engine as I have learned a bit more about software architecture now.
+
+
+# Some colorful pictures
+
+![Screenshot](https://raw.githubusercontent.com/kingkellogg/ogl-noobgl/master/_pics/HZP6r.png)
+
+![Screenshot](https://raw.githubusercontent.com/kingkellogg/ogl-noobgl/master/_pics/one.PNG)
+
+![Screenshot](https://raw.githubusercontent.com/kingkellogg/ogl-noobgl/master/_pics/three.PNG)
+
+![Screenshot](https://raw.githubusercontent.com/kingkellogg/ogl-noobgl/master/_pics/heli.png)
+
+![Screenshot](https://raw.githubusercontent.com/kingkellogg/ogl-noobgl/master/_pics/TmlxQ.png)
