@@ -19,6 +19,10 @@ I hope you have fun with this. I know the code is pretty crappy at some points.
 # Plans
 Probably none. If I get back into OpenGL, I will probably write a new engine as I have learned a bit more about software architecture now.
 
+# Notes
+
+Requires my rax framework to compile, which is in another repository of mine.  
+
 
 # Some colorful pictures
 
