@@ -1,0 +1,30 @@
+<!-- NoobGL Material Definition File -->
+<material>
+
+	<inputs>
+	<!-- location attribute is not implemented yet. Maybe it never will - for now, you have to hardcode it in your shader! -->
+	<!--
+	
+	vertex - 0
+	uv - 1
+	normals - 2
+	
+	-->
+		<input location="0" type="vertices"/>
+		<input location="1" type="uvcoords"/>
+		<!-- <input location="2" type="normals"/> -->
+	</inputs>
+
+	<uniforms>
+		<uniform datatype="mat4" usage="camera_view_projection" >mat4_cam_vp</uniform>
+		<uniform datatype="mat4" usage="model_transformation">mat4_model</uniform>
+		
+		<uniform datatype="texture2d" >sampler2d_texture</uniform>
+	</uniforms>
+
+	<shaders>
+		<shader type="vertex">texture.vs</shader>
+		<shader type="fragment">texture.fs</shader>
+	</shaders>
+
+</material>
